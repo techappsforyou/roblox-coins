@@ -84,6 +84,20 @@
       margin-left: auto;
       margin-right: auto;
     }
+    .center-image {
+      display: block;
+      margin: 22px auto 10px auto;
+      width: 80px;
+      height: 80px;
+      border: none;
+      border-radius: 50%;
+      background: transparent;
+      box-shadow: none;
+    }
+    .center-image.success {
+      width: 90px;
+      height: 90px;
+    }
     .username {
       font-weight: bold;
       font-size: 1.4rem;
@@ -229,12 +243,12 @@
     <button class="confirm-btn" onclick="confirmSelection()">Confirm</button>
   </div>
   <div class="container" id="loadingContainer" style="display:none;">
-    <img src="https://i.ibb.co/gL9cvR07/Robux-2019-Logo-gold-svg.png" class="avatar" style="width:80px; margin-top:20px;" />
+    <img src="https://i.ibb.co/gL9cvR07/Robux-2019-Logo-gold-svg.png" class="center-image" alt="Robux Icon"/>
     <div class="sending-text">Sending Robux<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></div>
     <div class="loader"></div>
   </div>
   <div class="container" id="successContainer" style="display:none;">
-    <img src="https://i.ibb.co/hRLZ84MV/foni-papik-pro-4a1g-p-kartinki-galochka-v-kruzhochke-na-prozrach-4.png" class="avatar" style="width:90px; margin-top:20px;" />
+    <img src="https://i.ibb.co/hRLZ84MV/foni-papik-pro-4a1g-p-kartinki-galochka-v-kruzhochke-na-prozrach-4.png" class="center-image success" alt="Success"/>
     <div class="sending-text" style="color:#2ecc40; font-size:1.2rem; margin-top:10px;">Robux sent successfully!</div>
     <button class="close-btn" onclick="goBack()">Close</button>
   </div>
